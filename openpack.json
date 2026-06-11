@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "name": "nestdevlab/must-have",
+  "version": "0.1.0",
+  "requires": {
+    "agent-toolkit": {
+      "source": "github:Yehonal/agent-toolkit",
+      "ref": "main",
+      "mode": "tracking",
+      "select": [
+        "rules/git-read-only-by-default.md",
+        "rules/no-nonsense-comments.md",
+        "rules/self-contained-docs.md",
+        "rules/self-improve-on-correction.md",
+        "skills/self-improve",
+        "skills/context-checkup"
+      ]
+    },
+    "core": {
+      "source": "github:NestDevLab/agent-core-toolkit-public",
+      "ref": "main",
+      "mode": "tracking",
+      "select": [
+        "skills/code-review",
+        "skills/plan-task"
+      ]
+    }
+  }
+}
