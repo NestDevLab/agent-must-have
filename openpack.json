@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "requires": {
     "agent-toolkit": {
-      "source": "github:Yehonal/agent-toolkit",
+      "source": "github:FrancescoBorzi/agent-toolkit",
       "ref": "main",
       "mode": "tracking",
       "select": [
