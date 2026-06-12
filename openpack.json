@@ -8,7 +8,6 @@
       "ref": "main",
       "mode": "tracking",
       "select": [
-        "rules/git-read-only-by-default.md",
         "rules/no-nonsense-comments.md",
         "rules/self-contained-docs.md",
         "rules/self-improve-on-correction.md",
