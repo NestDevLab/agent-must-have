@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "name": "nestdevlab/must-have-standard",
+  "name": "nestdevlab/must-have-core",
   "version": "0.2.0",
   "requires": {
     "agent-toolkit": {
@@ -13,15 +13,6 @@
         "rules/self-improve-on-correction.md",
         "skills/self-improve",
         "skills/context-checkup"
-      ]
-    },
-    "core": {
-      "source": "github:NestDevLab/agent-core-toolkit-public",
-      "ref": "main",
-      "mode": "tracking",
-      "select": [
-        "skills/code-review",
-        "skills/plan-task"
       ]
     }
   }
