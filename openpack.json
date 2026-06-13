@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "name": "nestdevlab/must-have",
-  "version": "0.1.0",
+  "name": "nestdevlab/must-have-standard",
+  "version": "0.2.0",
   "requires": {
     "agent-toolkit": {
       "source": "github:FrancescoBorzi/agent-toolkit",
