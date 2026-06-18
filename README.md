@@ -61,7 +61,7 @@ Includes Standard, plus:
 
 | Resource | Type | From | Purpose |
 |---|---|---|---|
-| `rules/git-read-only-by-default.md` | Rule | `github:FrancescoBorzi/agent-toolkit` | Git is read-only unless the user explicitly asks for a write action. |
+| `rules/git-read-only-by-default.md` | Rule | `github:Yehonal/agent-toolkit` | Git is read-only unless the user explicitly asks for a write action. |
 
 ## Customize
 
