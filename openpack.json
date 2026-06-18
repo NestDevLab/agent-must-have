@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
   "name": "nestdevlab/must-have-guarded",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "requires": {
     "agent-toolkit": {
-      "source": "github:FrancescoBorzi/agent-toolkit",
+      "source": "github:Yehonal/agent-toolkit",
       "ref": "main",
       "mode": "tracking",
       "select": [
@@ -23,6 +23,14 @@
       "select": [
         "skills/code-review",
         "skills/plan-task"
+      ]
+    },
+    "mattpocock-skills": {
+      "source": "skillkit:github:mattpocock/skills",
+      "ref": "main",
+      "mode": "tracking",
+      "select": [
+        "skills/grill-me"
       ]
     }
   }
