@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
   "name": "nestdevlab/must-have-core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "requires": {
     "agent-toolkit": {
-      "source": "github:FrancescoBorzi/agent-toolkit",
+      "source": "github:Yehonal/agent-toolkit",
       "ref": "main",
       "mode": "tracking",
       "select": [
