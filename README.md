@@ -1,7 +1,7 @@
 # nestdev must-have
 
-Curated OpenPack meta-packages for baseline agent rules, instructions, and skills. These packs ship
-no resources of their own; each profile aggregates selected resources from the NestDev-maintained
+Curated OpenPack meta-packages for baseline agent rules and skills. These packs ship no resources
+of their own; each profile aggregates selected resources from the NestDev-maintained
 `github:Yehonal/agent-toolkit` fork, `github:NestDevLab/agent-core-toolkit-public`, and selected
 external skill sources.
 
@@ -16,7 +16,8 @@ external skill sources.
 `standard` is the default recommendation for development agents. Use `core` for lean shared fleets and `guarded` where Git mutations should require explicit approval.
 
 The standard profile currently tracks `github:Yehonal/agent-toolkit#main-integration` so the fleet
-can test the cross-runtime self-improvement activation stack before it lands upstream.
+can test the updated self-improvement skills before the stack lands upstream. Runtime instruction
+activation is supplied by the shared core private toolkit to avoid duplicate instruction targets.
 
 ## Install
 
@@ -45,7 +46,6 @@ Requires agentwheel >= 0.9.
 
 | Resource | Type | From | Purpose |
 |---|---|---|---|
-| `instructions/AGENTS.md` | Instructions | `github:Yehonal/agent-toolkit` | Activate self-improvement prompts on runtimes that do not consume rule files directly. |
 | `rules/no-nonsense-comments.md` | Rule | `github:Yehonal/agent-toolkit` | Code comments are written for future readers with no process narration or self-reference. |
 | `rules/self-contained-docs.md` | Rule | `github:Yehonal/agent-toolkit` | Planning and design documents must be concise and executable by a fresh agent session. |
 | `rules/self-improve-on-correction.md` | Rule | `github:Yehonal/agent-toolkit` | When corrected on governed behavior or a repeated workflow, offer to persist the fix via `/self-improve`. |

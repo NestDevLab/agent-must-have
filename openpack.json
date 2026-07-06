@@ -1,14 +1,13 @@
 {
   "schemaVersion": 2,
   "name": "nestdevlab/must-have-standard",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "requires": {
     "agent-toolkit": {
       "source": "github:Yehonal/agent-toolkit",
       "ref": "main-integration",
       "mode": "tracking",
       "select": [
-        "instructions/AGENTS.md",
         "rules/no-nonsense-comments.md",
         "rules/self-contained-docs.md",
         "rules/self-improve-on-correction.md",
