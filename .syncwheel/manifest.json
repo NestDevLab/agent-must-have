@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "defaults": {
+    "canonical_remote": "origin",
+    "publication_remote": "origin",
+    "base_branch": "standard",
+    "base_ref": "origin/standard"
+  },
+  "integration": {
+    "branch": "standard-integration",
+    "base": "origin/standard",
+    "strategy": "cherry-pick",
+    "stacks": []
+  },
+  "stacks": [],
+  "syncwheel_tracking": "git-tracked"
+}

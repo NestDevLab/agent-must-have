@@ -1,6 +1,9 @@
 # nestdev must-have
 
-Curated OpenPack meta-packages for baseline agent rules and skills. These packs ship no resources of their own; each profile aggregates selected resources from the NestDev-maintained `github:Yehonal/agent-toolkit` fork, `github:NestDevLab/agent-core-toolkit-public`, and selected external skill sources.
+Curated OpenPack meta-packages for baseline agent rules, instructions, and skills. These packs ship
+no resources of their own; each profile aggregates selected resources from the NestDev-maintained
+`github:Yehonal/agent-toolkit` fork, `github:NestDevLab/agent-core-toolkit-public`, and selected
+external skill sources.
 
 ## Profiles
 
@@ -11,6 +14,9 @@ Curated OpenPack meta-packages for baseline agent rules and skills. These packs 
 | Guarded | `nestdev-must-have-guarded` | `github:NestDevLab/agent-must-have#guarded` | You want Standard plus a Git read-only-by-default rule for stricter repository safety. |
 
 `standard` is the default recommendation for development agents. Use `core` for lean shared fleets and `guarded` where Git mutations should require explicit approval.
+
+The standard profile currently tracks `github:Yehonal/agent-toolkit#main-integration` so the fleet
+can test the cross-runtime self-improvement activation stack before it lands upstream.
 
 ## Install
 
@@ -39,9 +45,10 @@ Requires agentwheel >= 0.9.
 
 | Resource | Type | From | Purpose |
 |---|---|---|---|
+| `instructions/AGENTS.md` | Instructions | `github:Yehonal/agent-toolkit` | Activate self-improvement prompts on runtimes that do not consume rule files directly. |
 | `rules/no-nonsense-comments.md` | Rule | `github:Yehonal/agent-toolkit` | Code comments are written for future readers with no process narration or self-reference. |
 | `rules/self-contained-docs.md` | Rule | `github:Yehonal/agent-toolkit` | Planning and design documents must be concise and executable by a fresh agent session. |
-| `rules/self-improve-on-correction.md` | Rule | `github:Yehonal/agent-toolkit` | When corrected on governed behavior, offer to persist the fix via `/self-improve`. |
+| `rules/self-improve-on-correction.md` | Rule | `github:Yehonal/agent-toolkit` | When corrected on governed behavior or a repeated workflow, offer to persist the fix via `/self-improve`. |
 | `skills/self-improve` | Skill | `github:Yehonal/agent-toolkit` | Capture user feedback into the skill or governing doc that should have prevented a mistake. |
 | `skills/context-checkup` | Skill | `github:Yehonal/agent-toolkit` | Audit what auto-loads into an agent session's context window and suggest lean, reversible fixes. |
 
