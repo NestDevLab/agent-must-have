@@ -1,11 +1,18 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "name": "nestdevlab/must-have-standard",
-  "version": "0.2.3",
+  "version": "0.2.4",
+  "compositionRules": [
+    {
+      "target": "skills/*",
+      "include": "core:fragments/skill-evolution.md",
+      "exclude": ["nestdev-core-toolkit:skills/skill-evolution"]
+    }
+  ],
   "requires": {
     "agent-toolkit": {
-      "source": "github:Yehonal/agent-toolkit",
-      "ref": "main-integration",
+      "source": "github:eai-org/agent-toolkit",
+      "ref": "main",
       "mode": "tracking",
       "select": [
         "rules/no-nonsense-comments.md",
@@ -20,6 +27,7 @@
       "ref": "main",
       "mode": "tracking",
       "select": [
+        "fragments/skill-evolution.md",
         "skills/code-review",
         "skills/plan-task"
       ]

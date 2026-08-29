@@ -4,7 +4,8 @@
     "canonical_remote": "origin",
     "publication_remote": "origin",
     "base_branch": "standard",
-    "base_ref": "origin/standard"
+    "base_ref": "origin/standard",
+    "integration_membership": "legacy"
   },
   "integration": {
     "branch": "standard-integration",
@@ -12,6 +13,26 @@
     "strategy": "cherry-pick",
     "stacks": []
   },
-  "stacks": [],
-  "syncwheel_tracking": "git-tracked"
+  "stacks": [
+    {
+      "id": "skill-evolution-v01",
+      "branch": "pr/skill-evolution-v01",
+      "base": "origin/standard",
+      "target_remote": "origin",
+      "target_branch": "standard",
+      "integration_branch": "standard-integration",
+      "commits": [],
+      "state": "published",
+      "publication": {
+        "enabled": true
+      },
+      "meta": {
+        "purpose": "Skill Evolution v0.1 dependency alignment"
+      }
+    }
+  ],
+  "syncwheel_tracking": "git-tracked",
+  "repository_mode": "delivery",
+  "syncwheel_worktree_root": ".syncwheel/wt",
+  "channels": []
 }
