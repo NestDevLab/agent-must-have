@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "name": "nestdevlab/must-have-standard",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "compositionRules": [
     {
       "target": "skills/*",
@@ -12,8 +12,8 @@
   ],
   "requires": {
     "agent-toolkit": {
-      "source": "git:https://github.com/eai-org/agent-toolkit.git#main",
-      "ref": "4c6e38831c7e591ce870877568bf07d4e274ccf2",
+      "source": "github:eai-org/agent-toolkit",
+      "ref": "main",
       "mode": "pinned",
       "select": [
         "rules/no-nonsense-comments.md",
@@ -22,8 +22,8 @@
       ]
     },
     "agent-toolkit-self-improve": {
-      "source": "git:https://github.com/eai-org/agent-toolkit.git#main",
-      "ref": "4c6e38831c7e591ce870877568bf07d4e274ccf2",
+      "source": "github:eai-org/agent-toolkit",
+      "ref": "main",
       "mode": "pinned",
       "select": [
         "rules/self-improve-on-correction.md",
@@ -43,7 +43,7 @@
     },
     "mattpocock-skills": {
       "source": "skillkit:github:mattpocock/skills",
-      "ref": "43ea0884b07a3e67a5a07f025ce92aefa983177b",
+      "ref": "main",
       "mode": "pinned",
       "select": [
         "skills/grill-me"
