@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "name": "nestdevlab/must-have-standard",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "compositionRules": [
     {
       "target": "skills/*",
@@ -12,7 +12,7 @@
   ],
   "requires": {
     "agent-toolkit": {
-      "source": "github:eai-org/agent-toolkit",
+      "source": "git:https://github.com/eai-org/agent-toolkit.git#main",
       "ref": "4c6e38831c7e591ce870877568bf07d4e274ccf2",
       "mode": "pinned",
       "select": [
@@ -22,7 +22,7 @@
       ]
     },
     "agent-toolkit-self-improve": {
-      "source": "github:eai-org/agent-toolkit",
+      "source": "git:https://github.com/eai-org/agent-toolkit.git#main",
       "ref": "4c6e38831c7e591ce870877568bf07d4e274ccf2",
       "mode": "pinned",
       "select": [
